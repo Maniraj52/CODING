@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background images</title>
+    <style>
+        div {
+            height: 400px;
+            width: 800px;
+            border: 2px solid rgb(133, 9, 9);
+            margin: 20px auto;
+        }
+
+        .box1 {
+            background-image: url(car.png), linear-gradient(to left, red, green, blue);
+            background-size: cover;
+            background-attachment: scroll;
+            background-blend-mode: multiply;
+        }
+
+        .box2 {
+            background-image: url(car.png), linear-gradient(to top, yellow, cyan, lime);
+            background-size: contain;
+            background-attachment: fixed;
+            background-blend-mode: multiply;
+
+        }
+
+        .box3 {
+            background-image: url(car.png), linear-gradient(to bottom left, pink, orange, purple);
+            background-attachment: scroll;
+            background-blend-mode: multiply;
+        }
+
+        .box4 {
+            height: 1500px;
+            width: 2000px;
+            background-image: url(car.png);
+            background-repeat: repeat;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Background-image : url() -->
+    <!-- Background-size : cover/contain-->
+    <!-- Background-Attachement : fixed/scroll -->
+    <!-- Background-Repeat -->
+    <div class="box1">
+        This is to show the background images.
+    </div>
+    <div class="box2">
+        This is to show the background images.
+    </div>
+    <div class="box3">
+        This is to show the background images.
+    </div>
+    <!-- Background-repeat : it has 4 types -->
+    <!-- background-repeat -->
+    <!-- Background-no-repeat -->
+    <!-- Background-repeat-x -->
+    <!-- Background-repeat-y -->
+    <div class="box4">
+        This is to show the background images.
+    </div>
+  
+</body>
+
+</html>
