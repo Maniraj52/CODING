@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .grid_container {
+            display: grid;
+            background-color: rgb(28, 167, 213);
+            grid-template-columns: auto auto;
+            grid-template-rows: 100px 50px 80px 100px;
+            grid-template-areas: "header header" "navigation navigation" "sidebar maincontent" "footer footer";
+
+        }
+
+        .items {
+            background-color: rgb(245, 113, 6);
+            border: 2px solid rgb(108, 4, 164);
+            padding: 20px;
+            text-align: center;
+            text-decoration: underline;
+            text-transform:uppercase;
+            
+        }
+
+        #first1 {background-color: rgb(212, 239, 6);
+            grid-area: header;
+            color: rgb(8, 24, 246);
+        }
+
+        #first2 {
+            grid-area: navigation;
+            color: rgb(184, 5, 244);
+            background-color: lightyellow;
+        }
+
+        #first3 {
+            grid-area: sidebar;
+            color: rgb(26, 3, 236);
+            background-color: lime;
+        }
+
+        #first4 {
+            grid-area: maincontent;
+            color: rgb(201, 250, 4);
+        }
+
+        #first5 {
+            grid-area: footer;
+            color: rgb(6, 242, 183);
+            background-image:url(bullet.png);
+            padding-bottom:400px ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid_container">
+        <div class="items" id="first1">1</div>
+        <div class="items" id="first2">2</div>
+        <div class="items" id="first3">3</div>
+        <div class="items" id="first4">4</div>
+        <div class="items" id="first5">5</div>
+</body>
+
+</html>
